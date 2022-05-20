@@ -14,17 +14,27 @@ var sliderNav = function (manual) {
   slides[manual].classList.add("active");
 };
 
-btns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    sliderNav(i);
-  });
-});
+let slideIndex = 0;
+showSlides();
 
-var counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 3) {
-    counter = 1;
+function showSlides() {
+  let i;
+  let slides = document.querySelectorAll(".image-slide");
+  let dots = document.querySelectorAll(".nav-btn");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-}, 2000);
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " active";
+
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
