@@ -1,19 +1,3 @@
-const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".image-slide");
-
-var sliderNav = function (manual) {
-  btns.forEach((btn) => {
-    btn.classList.remove("active");
-  });
-
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-
-  btns[manual].classList.add("active");
-  slides[manual].classList.add("active");
-};
-
 let slideIndex = 0;
 showSlides();
 
@@ -36,5 +20,29 @@ function showSlides() {
   slides[slideIndex - 1].className += " active";
   dots[slideIndex - 1].className += " active";
 
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+////////
+
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".image-slide");
+
+var sliderNav = function (manual) {
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+};
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {});
+});
+
+//
