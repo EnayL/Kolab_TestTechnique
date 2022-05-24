@@ -43,7 +43,7 @@ section .content h1 {
   font-size: 35px;
   font-family: "Titillium Web", sans-serif;
   margin-left: 20%;
-  margin-top: -15%;
+  margin-top: -25%;
   padding: 0%;
   width: 100%;
 }
@@ -68,8 +68,8 @@ section .content h3 {
   color: white;
   font-size: 20px;
   font-family: "Titillium Web", sans-serif;
-  margin-top: 10%;
-  justify-content: space-between;
+  margin-top: 15%;
+  margin-left: 335%;
 }
 
 .content {
@@ -81,17 +81,16 @@ section .content h3 {
 }
 .rightblock {
   width: 100%;
-  background-color: lawngreen;
   margin-left: 1.5%;
   display: flex;
   flex-direction: column;
 }
 
 .adding {
+  margin-top: 1%;
   display: flex;
   width: 100%;
-  height: 80px;
-  background-color: rgb(79, 146, 158);
+  height: 60px;
 }
 
 .contentadd {
@@ -99,5 +98,68 @@ section .content h3 {
   display: flex;
   width: 100%;
   height: 512px;
-  background-color: rgb(158, 95, 79);
+}
+
+.addelement {
+  border-radius: 8px;
+  height: 60px;
+  width: 20%;
+}
+
+.adding form button {
+  border-radius: 5px;
+  background-color: #37276a;
+  text-decoration: none;
+  border: none;
+  padding-right: 8%;
+  padding-left: 8%;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 3%;
+  margin-right: 3%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.adding form button:hover {
+  border-radius: 5px;
+  background-color: #37276adc;
+}
+
+.adding form {
+  border-radius: 5px;
+  background-color: #1d1438;
+  width: 16%;
+  display: inline-flex;
+}
+
+.adding form h1 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.blockdate {
+  display: inline-flex;
+  border-radius: 5px;
+  width: 40%;
+  height: 60px;
+  background-color: #1d1438;
+  margin-left: 1%;
+}
+
+.blockdate p {
+  border-radius: 5px;
+  font-weight: lighter;
+  color: white;
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 7%;
+  background-color: #37276a;
+  padding-right: 2%;
+  padding-left: 2%;
 }
