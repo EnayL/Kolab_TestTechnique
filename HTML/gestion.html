@@ -6,6 +6,10 @@
     <title>Kolab</title>
     <link href="../CSS/header-connect.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/gestion.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/gestionqueries.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
   </head>
 
   <body>
@@ -22,13 +26,23 @@
         <div class="blockleft">
           <div class="content">
             <div class="datetime">
-              <p class="date">date</p>
-              <h3>TIME</h3>
+              <div class="align">
+                <p class="date" id="showdate"></p>
+              </div>
+              <span id="datetime"></span>
             </div>
             <h1>Hello !</h1>
             <h2>name</h2>
           </div>
-          <img src="../image/2.png" class="slider" />
+
+          <img src="../image/mornin.jpg" class="slider" alt="1" data-target="#myCarousel" data-slide-to="0" />
+          <img class="slider" src="../image/noon.jpg" alt="2"data-target="#myCarousel" data-slide-to="1" />
+          <img class="slider" src="../image/night.jpg" alt="3"data-target="#myCarousel" data-slide-to="2" />
+          <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+          </div>
         </div>
         <div class="rightblock">
           <div class="adding">
@@ -37,16 +51,158 @@
               <button>+</button>
             </form>
             <div class="blockdate">
-              <p>Aujourd'hui</p>
-
-              <p>Demain</p>
-
-              <p>Clotûrées</p>
+              <button >Aujourd'hui</button>
+              <span class="icon-button__badge">3</span>
+              <button>Demain</button>
+              <span class="icon-button__badge">3</span>
+              <button>Clotûrées</button>
+              <span class="icon-button__badge">3</span>
             </div>
           </div>
-          <div class="contentadd"></div>
-        </div>
+
+          <div id="div2" class="blocnote" style="display:none">
+            <div class="notecontent">
+              <h1>TITLE</h1>
+                    <text>
+                     vident, similique sunt in culpa qui offic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, simfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, fic nt, similique sunt in culpa qnt, similique sunt in culpa q nt,fic nt, similique sunt in culpa qnt, similiqfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, ue sunt in culpa q nt,ilique suvident, similique sunt in culpa qui offic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, simfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, fic nt, similique sunt in culpa qnt, similique sunt in culpa q nt,fic nt, similique sunt in culpa qnt, similiqfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, ue sunt in culpa q nt,ilique sunt in culpa q vident, similique sunt in culpa qui offic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, simfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, fic nt, similique sunt in culpa qnt, similique sunt in culpa q nt,fic nt, similique sunt in culpa qnt, similiqfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, ue sunt in culpa q nt,ilique sunt in culpa q vident, similique sunt in culpa qui offic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, simfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, fic nt, similique sunt in culpa qnt, similique sunt in culpa q nt,fic nt, similique sunt in culpa qnt, similiqfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, ue sunt in culpa q nt,ilique sunt in culpa q vident, similique sunt in culpa qui offic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, simfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, fic nt, similique sunt in culpa qnt, similique sunt in culpa q nt,fic nt, similique sunt in culpa qnt, similiqfic nt, similique sunt in culpa qnt, similique sunt in culpa q nt, ue sunt in culpa q nt,ilique sunt in culpa qnt in culpa q
+                    </text>
+            </div>
+                  <button onclick="hideShow()">close</button>
+           </div>
+
+
+          <section id="slider">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="slide-wrapper">
+                        <div class="controller">                    
+                                <div id="controls">
+                                    <button class='previous'>left</i></button>
+                                    <button class='next'>right</i></button>
+                                </div>
+                        </div>
+                        <br>
+                        <div class="my-slider">
+                         
+                          <div>
+                            <div class="blockcontent" id="note">
+                              
+                              <div class="contenttop">  
+                                                               
+                                <h1>TAGS</h1>
+                                <div class="topright">
+                                  <img src="../image/icons8-timer-90.png" />
+                                  <p>Time</p>
+                                </div>
+                              </div>
+                              
+                              <div class="midcontent">
+                                
+                                <h1>WORK TAGS</h1>
+                                <h2>ENTREPRISE</h2>
+                                <div class="working">
+                                  <p>Tâche assignée par</p>
+                                  <div class="admin">
+                                    <img src="../image/Unknown-3.jpg" />
+                                    <h1>name</h1>
+                                  </div>
+                                  <h3>Date</h3>
+                                  <div class="rendu">
+                                    <img src="../image/icons8-calendar-48.png" />
+                                    <h1>date</h1>
+                                  </div>
+
+                                  <h3>Notes</h3>
+                                  <div class="note">
+                                    <button onclick="hideShow()">
+                                      <img
+                                        src="../image/icons8-note-50.png"
+                                        class="noteimg"
+                                      />
+                                      <h1>Voir notes</h1>
+                                      <img
+                                        src="../image/arrow-bottom-svgrepo-com.svg"
+                                        class="bottom"
+                                      />
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="etat">
+                                <h1>ETAT DU TICKET</h1>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div class="blockcontent" id="note">
+                              
+                              <div class="contenttop">  
+                                                               
+                                <h1>TAGS</h1>
+                                <div class="topright">
+                                  <img src="../image/icons8-timer-90.png" />
+                                  <p>Time</p>
+                                </div>
+                              </div>
+                              
+                              <div class="midcontent">
+                                
+                                <h1>WORK TAGS</h1>
+                                <h2>ENTREPRISE</h2>
+                                <div class="working">
+                                  <p>Tâche assignée par</p>
+                                  <div class="admin">
+                                    <img src="../image/Unknown-3.jpg" />
+                                    <h1>name</h1>
+                                  </div>
+                                  <h3>Date</h3>
+                                  <div class="rendu">
+                                    <img src="../image/icons8-calendar-48.png" />
+                                    <h1>date</h1>
+                                  </div>
+
+                                  <h3>Notes</h3>
+                                  <div class="note">
+                                    <button onclick="hideShow()">
+                                      <img
+                                        src="../image/icons8-note-50.png"
+                                        class="noteimg"
+                                      />
+                                      <h1>Voir notes</h1>
+                                      <img
+                                        src="../image/arrow-bottom-svgrepo-com.svg"
+                                        class="bottom"
+                                      />
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="etat">
+                                <h1>ETAT DU TICKET</h1>
+                              </div>
+                            </div>
+                          </div>
+
+                        
+                          
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
       </div>
     </section>
+
+
+    <script src="../JS/hour.js"></script>
+    <script src="../JS/datewritten.js"></script>
+    <script src="../JS/carouseltime.js"></script>
+    <script src="../JS/carouselticket.js"></script>
+    <script src="../JS/note.js"></script>
   </body>
 </html>
