@@ -1,14 +1,4 @@
 (function () {
-  var year = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
   var months = [
     "January",
     "February",
