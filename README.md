@@ -30,5 +30,11 @@ car je suis très pris par les cours ducoup j'avais très peu de temps libre.
 
 - le js est séparé en plusieurs fichiers pour mieux les séparer (j'aurais pu tout mettre dans un fichier, c'était pour mieux me repérer pareil pour le css gestion et gestionqueries)
 
-Ce projet m'a appris beaucoup de choses en Js/css même si c'est très peu, 
-merci beaucoup ! 
+- les pages sont bien responsives sauf sur les smartphone et quelques bugs d'affichage sur les grand écrans.
+
+
+J'aurais pu travailler beaucoup plus sur ce projet mais je ne peux pas faire durer ce projet indéfiniment c'est pourquoi je le rend alors qu'il n'ai pas très aboutit.
+
+Le manque de temps à causes des projets de cours m'a pas mal ralentit dans ce projet mais ce projet m'a quand même appris beaucoup de choses en Js/css même si c'est très peu, et y avoir libre choix sur la direction "artistique" fut très plaisant même si j'ai reppris la maquette pdf j'ai essayé d'apporter une touche personnel.
+
+merci beaucoup pour ce test ! 
