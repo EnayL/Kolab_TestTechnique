@@ -25,7 +25,7 @@ Teste technique front-end pour paume
 - le html de la page gestion contient beaucoup de ligne à cause des exemples ce qui le rend très peu propre mais avec du backend (ajout/supression) il 
 y aurai beaucoup moins de ligne
 
-- le code css est très sale, j'aurais pu le simplifier faire des choses beaucoup plus propre en rajoutant des commentaire et chercher à faire plus simple/beau à voir mais j'ai laissé comme tel à cause du manque de temps
+- le code css est très sale, j'aurais pu le simplifier faire des choses beaucoup plus propre en rajoutant des commentaire et chercher à faire plus simple/beau à voir mais j'ai laissé comme tel (à la "va vite" pour réaliser le plus de choses possible dans de court délais) à cause du manque de temps
 car je suis très pris par les cours ducoup j'avais très peu de temps libre.
 
 - le js est séparé en plusieurs fichiers pour mieux les séparer (j'aurais pu tout mettre dans un fichier, c'était pour mieux me repérer pareil pour le css gestion et gestionqueries)
