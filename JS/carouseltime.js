@@ -34,7 +34,7 @@ function showSlides() {
   slides[slideIndex - 1].className += " active";
   dots[slideIndex - 1].className += " active";
 
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, start);
 }
 
 const btns = document.querySelectorAll(".nav-btn");
@@ -58,10 +58,3 @@ btns.forEach((btn, i) => {
 });
 
 //
-
-var updateValuesMinutes = function () {
-  $to.prop("value", to);
-  localStorage.setItem("Test", to); // add line 1 of 3
-  let slidesCheck = localStorage.getItem("Test"); // add line 2 of 3
-  console.log(slidesCheck); // add line 3 of 3
-};
