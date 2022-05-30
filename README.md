@@ -7,6 +7,7 @@ Teste technique front-end pour paume
 - /gestion.html : la page où on organise les rdv, travaux
 - /kolab : page descriptif Kolab
 - /kolab2 : page 2 descriptif Kolab
+- /header et /header-connect : pour avoir une vue d'ensemble sur le header
 
 ## Ce que je n'ai pas réussi à faire : 
 
