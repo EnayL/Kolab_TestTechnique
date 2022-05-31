@@ -1,5 +1,5 @@
 # Kolab_TestTechnique
-Teste technique front-end pour paume 
+Teste technique front-end pour paume x kolab
 
 ## Les différentes pages : 
 
