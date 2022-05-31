@@ -11,7 +11,7 @@ Teste technique front-end pour paume x kolab
 
 ## Ce que je n'ai pas réussi à faire : 
 
-- Le slider en 3 image en fonction de la journée, je n'arrivais pas à stocker l'information du slider ce qui fait que lorsque l'on refresh la page on revient sur le slider 1 
+- Le slider de la page gestion en 3 image en fonction de la journée (matin,midi,soir), je n'arrivais pas à stocker l'information du slider ce qui fait que lorsque l'on refresh la page on revient sur le slider 1 
 (si non le slider fonctionne bien : slider 1 : 9h, slider 2 : 13h , slider 3 : 21h)
 
 - Je n'ai pas très bien compris le système de notification (j'ai reussi à afficher les notifications sur les container)
